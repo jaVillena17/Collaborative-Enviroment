@@ -14,7 +14,7 @@
         $pass = $_POST["pass"];
         $remember = $_POST["remember"];
 
-        if($email == "admin@gmail.com", $pass == "admin"){
+        if($email == "admin@gmail.com" && $pass == "admin"){
             echo "<h2>Bienvenido, sus datos son los siguientes:</h2>";
             echo "<br>Correo electrónico: " . $email;
             echo "<br>Su contraseña: " . $pass;
