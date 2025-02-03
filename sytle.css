@@ -25,7 +25,7 @@ input:hover{
 .check{
     width: 10%;
 }
-button{
+div{
     background-color: lightgreen;
     cursor: pointer;
     font-weight: bold;
@@ -34,8 +34,10 @@ button{
     transition: all 0.2s;
     border: 1px solid lightgreen;
     width: 100px;
+    display: inline-block;
+    margin: 0 auto;
 }
-button:hover{
+div:hover{
     box-shadow: 3px 3px 3px green;
     scale: 1.1;
     
