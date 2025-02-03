@@ -9,11 +9,15 @@
 <body>
     <?php
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
-        
-        $email = $_POST["email"];
-        $pass = $_POST["pass"];
-        $remember = $_POST["remember"];
-
+        if(isset($_POST["email"]) && isset($_POST["pass"])){
+            $email = $_POST["email"];
+            $pass = $_POST["pass"];
+        }else{
+            echo "Debe introducir el email y la contraseña";
+        }
+        if(isset($_POST["remember"])){
+            $remember = $_POST["remember"];
+        }
         if($email == "admin@gmail.com" && $pass == "admin"){
             echo "<h2>Bienvenido, sus datos son los siguientes:</h2>";
             echo "<br>Correo electrónico: " . $email;
