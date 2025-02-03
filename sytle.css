@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+label{
+    font-weight: bold;
+    color: white;margin-right: 5px;
+}
+span{
+    font-weight: bold;
+    color: white;
+    margin-right: 5px;
+}
+input{
+    background-color: rgb(21, 27, 27);
+    color: white;font-weight: bold;
+    padding: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.877);
+    width: 100%;
+    transition: all 0.5s;
+    margin: 5px 0px;
+}
+input:hover{
+    background-color: rgb(66, 66, 66);
+}
+.check{
+    width: 10%;
+}
+button{
+    background-color: lightgreen;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 0.2s;
+    border: 1px solid lightgreen;
+    width: 100px;
+}
+button:hover{
+    box-shadow: 3px 3px 3px green;
+    scale: 1.1;
+    
+}
+a button{
+    background-color: rgb(255, 94, 94);
+}
+form{
+    background-color: rgb(77, 121, 245);
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
